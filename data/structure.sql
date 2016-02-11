@@ -1,0 +1,9 @@
+CREATE TABLE `images` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`url` VARCHAR(255) NOT NULL,
+	`content` MEDIUMBLOB NOT NULL,
+	`session` INT(10) UNSIGNED NOT NULL,
+	PRIMARY KEY (`id`),
+	INDEX `session` (`session`)
+)
+ENGINE=InnoDB;
